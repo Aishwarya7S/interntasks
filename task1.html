@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS sample</title>
+    </head>
+    <body>
+    <h3>Javascript calculator</h3>
+    <script>
+        var a=parseInt(prompt("Enter the value of a:"));
+        var b=parseInt(prompt("Enter the value of b:"));
+        var c=parseInt(prompt("Enter the opertion:"+"\n"+"Enter your choice from 1 to 6"));
+        let r;
+        switch(c){
+            case 1:
+                r=a+b;
+                break;
+            case 2:
+                r=a-b;
+                break;  
+            case 3:
+                r=a*b;
+                break; 
+            case 4:
+                r=a/b;
+                break;  
+            case 5:
+                r=a%b;
+                break;
+            case 6:
+                r=a**b;
+                break;
+            default:
+                r="Invalid operation" ;
+        }
+        document.write("The result is " + r);
+        
+    </script>
+
+</body>  
+</html>
